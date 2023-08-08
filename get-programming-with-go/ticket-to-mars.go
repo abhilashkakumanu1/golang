@@ -16,7 +16,6 @@ const (
 
 func main() {
 	printTable()
-
 }
 
 func getSpaceline() string {

@@ -47,8 +47,8 @@ func getPrice(speed int, tripType TripType) int {
 
 func printTable() {
 	// Header
-	fmt.Printf("%-15v %-4v %-10v %-5v\n", "Spaceline", "Days", "Trip type", "Price")
-	fmt.Printf("%v", strings.Repeat("=", 37)+"\n")
+	fmt.Printf("%-16v %-4v %-10v %-5v\n", "Spaceline", "Days", "Trip type", "Price")
+	fmt.Printf("%v", strings.Repeat("=", 38)+"\n")
 
 	// Rows
 	for i := 0; i < 10; i++ {
@@ -57,6 +57,6 @@ func printTable() {
 		tripType := getTripType()
 		price := getPrice(speed, tripType)
 
-		fmt.Printf("%-15v %4v %-10v $%4v\n", spaceline, duration, tripType, price)
+		fmt.Printf("%-16v %4v %-10v $%4v\n", spaceline, duration, tripType, price)
 	}
 }

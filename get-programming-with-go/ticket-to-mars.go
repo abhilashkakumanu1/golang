@@ -19,7 +19,7 @@ func main() {
 }
 
 func getSpaceline() string {
-	spacelineNames := [3]string{"Virgin Galactic", "SpaceX", "SpaceAdventures"}
+	spacelineNames := [3]string{"Virgin Galactic", "SpaceX", "Space Adventures"}
 	return spacelineNames[rand.Intn(len(spacelineNames))]
 }
 
